@@ -1,0 +1,21 @@
+﻿<Window x:Class="TaskManagement.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskManagement"
+        mc:Ignorable="d"
+        Title="Window4" Height="470" Width="1000">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock FontSize="20" Width="214" Height="38" VerticalAlignment="Top">Change Username:  </TextBlock>
+            <TextBox x:Name="UsernameTextBox" FontSize="20" Height="40" Width="175" VerticalAlignment="Top" TextChanged="UsernameTextBox_TextChanged" ></TextBox>
+            <Button Height="40" Width="175" VerticalAlignment="Top" FontSize="20" Click="Button_Click"> Name Changed </Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock FontSize="20" Width="214" Height="38" VerticalAlignment="Top">Change Password:</TextBlock>
+            <PasswordBox x:Name="PasswordBox" FontSize="20" Height="40" Width="175" VerticalAlignment="Top"></PasswordBox>
+            <Button Height="40" Width="175" VerticalAlignment="Top" FontSize="20" Click="Button_Click_1">Password Changed</Button>
+        </StackPanel>
+    </StackPanel>
+</Window>
